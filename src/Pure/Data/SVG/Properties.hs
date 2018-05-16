@@ -1,794 +1,794 @@
 {-# LANGUAGE PatternSynonyms, OverloadedStrings #-}
 module Pure.Data.SVG.Properties where
 
-import Pure.Data.View.Patterns (XLink(..),SVGProperty(..))
+import Pure.Data.View.Patterns
 import Pure.Data.Txt (Txt)
 
 --------------------------------------------------------------------------------
 -- SVG XLinks
 
-pattern XLinkActuate :: Txt -> XLink
-pattern XLinkActuate v = XLink ("xlink:actuate",v)
+pattern XLinkActuate :: HasXLinks a => Txt -> a -> a
+pattern XLinkActuate v a = XLink ("xlink:actuate",v) a
 
-pattern XLinkArcrole :: Txt -> XLink
-pattern XLinkArcrole v = XLink ("xlink:arcrole",v)
+pattern XLinkArcrole :: HasXLinks a => Txt -> a -> a
+pattern XLinkArcrole v a = XLink ("xlink:arcrole",v) a
 
-pattern XLinkHref :: Txt -> XLink
-pattern XLinkHref v = XLink ("xlink:href",v)
+pattern XLinkHref :: HasXLinks a => Txt -> a -> a
+pattern XLinkHref v a = XLink ("xlink:href",v) a
 
-pattern XLinkRole :: Txt -> XLink
-pattern XLinkRole v = XLink ("xlink:role",v)
+pattern XLinkRole :: HasXLinks a => Txt -> a -> a
+pattern XLinkRole v a = XLink ("xlink:role",v) a
 
-pattern XLinkShow :: Txt -> XLink
-pattern XLinkShow v = XLink ("xlink:show",v)
+pattern XLinkShow :: HasXLinks a => Txt -> a -> a
+pattern XLinkShow v a = XLink ("xlink:show",v) a
 
-pattern XLinkTitle :: Txt -> XLink
-pattern XLinkTitle v = XLink ("xlink:title",v)
+pattern XLinkTitle :: HasXLinks a => Txt -> a -> a
+pattern XLinkTitle v a = XLink ("xlink:title",v) a
 
-pattern XLinkType :: Txt -> XLink
-pattern XLinkType v = XLink ("xlink:type",v)
+pattern XLinkType :: HasXLinks a => Txt -> a -> a
+pattern XLinkType v a = XLink ("xlink:type",v) a
 
 --------------------------------------------------------------------------------
 -- SVG Properties
 
-pattern About :: Txt -> SVGProperty
-pattern About v = SVGProperty ("about",v)
+pattern About :: HasFeatures a => Txt -> a -> a
+pattern About v a = Property ("about",v) a
 
-pattern AccentHeight :: Txt -> SVGProperty
-pattern AccentHeight v = SVGProperty ("accentHeight",v)
+pattern AccentHeight :: HasFeatures a => Txt -> a -> a
+pattern AccentHeight v a = Property ("accentHeight",v) a
 
-pattern Accumulate :: Txt -> SVGProperty
-pattern Accumulate v = SVGProperty ("accumulate",v)
+pattern Accumulate :: HasFeatures a => Txt -> a -> a
+pattern Accumulate v a = Property ("accumulate",v) a
 
-pattern Additive :: Txt -> SVGProperty
-pattern Additive v = SVGProperty ("additive",v)
+pattern Additive :: HasFeatures a => Txt -> a -> a
+pattern Additive v a = Property ("additive",v) a
 
-pattern AlignmentBaseline :: Txt -> SVGProperty
-pattern AlignmentBaseline v = SVGProperty ("alignmentBaseline",v)
+pattern AlignmentBaseline :: HasFeatures a => Txt -> a -> a
+pattern AlignmentBaseline v a = Property ("alignmentBaseline",v) a
 
-pattern AllowReorder :: Txt -> SVGProperty
-pattern AllowReorder v = SVGProperty ("allowReorder",v)
+pattern AllowReorder :: HasFeatures a => Txt -> a -> a
+pattern AllowReorder v a = Property ("allowReorder",v) a
 
-pattern Alphabetic :: Txt -> SVGProperty
-pattern Alphabetic v = SVGProperty ("alphabetic",v)
+pattern Alphabetic :: HasFeatures a => Txt -> a -> a
+pattern Alphabetic v a = Property ("alphabetic",v) a
 
-pattern Amplitude :: Txt -> SVGProperty
-pattern Amplitude v = SVGProperty ("amplitude",v)
+pattern Amplitude :: HasFeatures a => Txt -> a -> a
+pattern Amplitude v a = Property ("amplitude",v) a
 
-pattern ArabicForm :: Txt -> SVGProperty
-pattern ArabicForm v = SVGProperty ("arabicForm",v)
+pattern ArabicForm :: HasFeatures a => Txt -> a -> a
+pattern ArabicForm v a = Property ("arabicForm",v) a
 
-pattern Ascent :: Txt -> SVGProperty
-pattern Ascent v = SVGProperty ("ascent",v)
+pattern Ascent :: HasFeatures a => Txt -> a -> a
+pattern Ascent v a = Property ("ascent",v) a
 
-pattern AttributeName :: Txt -> SVGProperty
-pattern AttributeName v = SVGProperty ("attributeName",v)
+pattern AttributeName :: HasFeatures a => Txt -> a -> a
+pattern AttributeName v a = Property ("attributeName",v) a
 
-pattern AttributeType :: Txt -> SVGProperty
-pattern AttributeType v = SVGProperty ("attributeType",v)
+pattern AttributeType :: HasFeatures a => Txt -> a -> a
+pattern AttributeType v a = Property ("attributeType",v) a
 
-pattern AutoReverse :: Txt -> SVGProperty
-pattern AutoReverse v = SVGProperty ("autoReverse",v)
+pattern AutoReverse :: HasFeatures a => Txt -> a -> a
+pattern AutoReverse v a = Property ("autoReverse",v) a
 
-pattern Azimuth :: Txt -> SVGProperty
-pattern Azimuth v = SVGProperty ("azimuth",v)
+pattern Azimuth :: HasFeatures a => Txt -> a -> a
+pattern Azimuth v a = Property ("azimuth",v) a
 
-pattern BaseFrequency :: Txt -> SVGProperty
-pattern BaseFrequency v = SVGProperty ("baseFrequency",v)
+pattern BaseFrequency :: HasFeatures a => Txt -> a -> a
+pattern BaseFrequency v a = Property ("baseFrequency",v) a
 
-pattern BaselineShift :: Txt -> SVGProperty
-pattern BaselineShift v = SVGProperty ("baselineShift",v)
+pattern BaselineShift :: HasFeatures a => Txt -> a -> a
+pattern BaselineShift v a = Property ("baselineShift",v) a
 
-pattern BaseProfile :: Txt -> SVGProperty
-pattern BaseProfile v = SVGProperty ("baseProfile",v)
+pattern BaseProfile :: HasFeatures a => Txt -> a -> a
+pattern BaseProfile v a = Property ("baseProfile",v) a
 
-pattern Bbox :: Txt -> SVGProperty
-pattern Bbox v = SVGProperty ("bbox",v)
+pattern Bbox :: HasFeatures a => Txt -> a -> a
+pattern Bbox v a = Property ("bbox",v) a
 
-pattern Begin :: Txt -> SVGProperty
-pattern Begin v = SVGProperty ("begin",v)
+pattern Begin :: HasFeatures a => Txt -> a -> a
+pattern Begin v a = Property ("begin",v) a
 
-pattern Bias :: Txt -> SVGProperty
-pattern Bias v = SVGProperty ("bias",v)
+pattern Bias :: HasFeatures a => Txt -> a -> a
+pattern Bias v a = Property ("bias",v) a
 
-pattern By :: Txt -> SVGProperty
-pattern By v = SVGProperty ("by",v)
+pattern By :: HasFeatures a => Txt -> a -> a
+pattern By v a = Property ("by",v) a
 
-pattern CalcMode :: Txt -> SVGProperty
-pattern CalcMode v = SVGProperty ("calcMode",v)
+pattern CalcMode :: HasFeatures a => Txt -> a -> a
+pattern CalcMode v a = Property ("calcMode",v) a
 
-pattern CapHeight :: Txt -> SVGProperty
-pattern CapHeight v = SVGProperty ("capHeight",v)
+pattern CapHeight :: HasFeatures a => Txt -> a -> a
+pattern CapHeight v a = Property ("capHeight",v) a
 
-pattern Clip :: Txt -> SVGProperty
-pattern Clip v = SVGProperty ("clip",v)
+pattern Clip :: HasFeatures a => Txt -> a -> a
+pattern Clip v a = Property ("clip",v) a
 
-pattern ClipPath :: Txt -> SVGProperty
-pattern ClipPath v = SVGProperty ("clipPath",v)
+pattern ClipPath :: HasFeatures a => Txt -> a -> a
+pattern ClipPath v a = Property ("clipPath",v) a
 
-pattern ClipPathUnits :: Txt -> SVGProperty
-pattern ClipPathUnits v = SVGProperty ("clipPathUnits",v)
+pattern ClipPathUnits :: HasFeatures a => Txt -> a -> a
+pattern ClipPathUnits v a = Property ("clipPathUnits",v) a
 
-pattern ClipRule :: Txt -> SVGProperty
-pattern ClipRule v = SVGProperty ("clipRule",v)
+pattern ClipRule :: HasFeatures a => Txt -> a -> a
+pattern ClipRule v a = Property ("clipRule",v) a
 
-pattern Color :: Txt -> SVGProperty
-pattern Color v = SVGProperty ("color",v)
+pattern Color :: HasFeatures a => Txt -> a -> a
+pattern Color v a = Property ("color",v) a
 
-pattern ColorInterpolation :: Txt -> SVGProperty
-pattern ColorInterpolation v = SVGProperty ("colorInterpolation",v)
+pattern ColorInterpolation :: HasFeatures a => Txt -> a -> a
+pattern ColorInterpolation v a = Property ("colorInterpolation",v) a
 
-pattern ColorInterpolationFilters :: Txt -> SVGProperty
-pattern ColorInterpolationFilters v = SVGProperty ("colorInterpolationFilters",v)
+pattern ColorInterpolationFilters :: HasFeatures a => Txt -> a -> a
+pattern ColorInterpolationFilters v a = Property ("colorInterpolationFilters",v) a
 
-pattern ColorProfile :: Txt -> SVGProperty
-pattern ColorProfile v = SVGProperty ("colorProfile",v)
+pattern ColorProfile :: HasFeatures a => Txt -> a -> a
+pattern ColorProfile v a = Property ("colorProfile",v) a
 
-pattern ColorRendering :: Txt -> SVGProperty
-pattern ColorRendering v = SVGProperty ("colorRendering",v)
+pattern ColorRendering :: HasFeatures a => Txt -> a -> a
+pattern ColorRendering v a = Property ("colorRendering",v) a
 
-pattern ContentScriptType :: Txt -> SVGProperty
-pattern ContentScriptType v = SVGProperty ("contentScriptType",v)
+pattern ContentScriptType :: HasFeatures a => Txt -> a -> a
+pattern ContentScriptType v a = Property ("contentScriptType",v) a
 
-pattern ContentStyleType :: Txt -> SVGProperty
-pattern ContentStyleType v = SVGProperty ("contentStyleType",v)
+pattern ContentStyleType :: HasFeatures a => Txt -> a -> a
+pattern ContentStyleType v a = Property ("contentStyleType",v) a
 
-pattern Cursor :: Txt -> SVGProperty
-pattern Cursor v = SVGProperty ("cursor",v)
+pattern Cursor :: HasFeatures a => Txt -> a -> a
+pattern Cursor v a = Property ("cursor",v) a
 
-pattern Cx :: Txt -> SVGProperty
-pattern Cx v = SVGProperty ("cx",v)
+pattern Cx :: HasFeatures a => Txt -> a -> a
+pattern Cx v a = Property ("cx",v) a
 
-pattern Cy :: Txt -> SVGProperty
-pattern Cy v = SVGProperty ("cy",v)
+pattern Cy :: HasFeatures a => Txt -> a -> a
+pattern Cy v a = Property ("cy",v) a
 
-pattern D :: Txt -> SVGProperty
-pattern D v = SVGProperty ("d",v)
+pattern D :: HasFeatures a => Txt -> a -> a
+pattern D v a = Property ("d",v) a
 
-pattern Datatype :: Txt -> SVGProperty
-pattern Datatype v = SVGProperty ("datatype",v)
+pattern Datatype :: HasFeatures a => Txt -> a -> a
+pattern Datatype v a = Property ("datatype",v) a
 
-pattern Decelerate :: Txt -> SVGProperty
-pattern Decelerate v = SVGProperty ("decelerate",v)
+pattern Decelerate :: HasFeatures a => Txt -> a -> a
+pattern Decelerate v a = Property ("decelerate",v) a
 
-pattern Descent :: Txt -> SVGProperty
-pattern Descent v = SVGProperty ("descent",v)
+pattern Descent :: HasFeatures a => Txt -> a -> a
+pattern Descent v a = Property ("descent",v) a
 
-pattern DiffuseConstant :: Txt -> SVGProperty
-pattern DiffuseConstant v = SVGProperty ("diffuseConstant",v)
+pattern DiffuseConstant :: HasFeatures a => Txt -> a -> a
+pattern DiffuseConstant v a = Property ("diffuseConstant",v) a
 
-pattern Direction :: Txt -> SVGProperty
-pattern Direction v = SVGProperty ("direction",v)
+pattern Direction :: HasFeatures a => Txt -> a -> a
+pattern Direction v a = Property ("direction",v) a
 
-pattern Display :: Txt -> SVGProperty
-pattern Display v = SVGProperty ("display",v)
+pattern Display :: HasFeatures a => Txt -> a -> a
+pattern Display v a = Property ("display",v) a
 
-pattern Divisor :: Txt -> SVGProperty
-pattern Divisor v = SVGProperty ("divisor",v)
+pattern Divisor :: HasFeatures a => Txt -> a -> a
+pattern Divisor v a = Property ("divisor",v) a
 
-pattern DominantBaseline :: Txt -> SVGProperty
-pattern DominantBaseline v = SVGProperty ("dominantBaseline",v)
+pattern DominantBaseline :: HasFeatures a => Txt -> a -> a
+pattern DominantBaseline v a = Property ("dominantBaseline",v) a
 
-pattern Dur :: Txt -> SVGProperty
-pattern Dur v = SVGProperty ("dur",v)
+pattern Dur :: HasFeatures a => Txt -> a -> a
+pattern Dur v a = Property ("dur",v) a
 
-pattern Dx :: Txt -> SVGProperty
-pattern Dx v = SVGProperty ("dx",v)
+pattern Dx :: HasFeatures a => Txt -> a -> a
+pattern Dx v a = Property ("dx",v) a
 
-pattern Dy :: Txt -> SVGProperty
-pattern Dy v = SVGProperty ("dy",v)
+pattern Dy :: HasFeatures a => Txt -> a -> a
+pattern Dy v a = Property ("dy",v) a
 
-pattern EdgeMode :: Txt -> SVGProperty
-pattern EdgeMode v = SVGProperty ("edgeMode",v)
+pattern EdgeMode :: HasFeatures a => Txt -> a -> a
+pattern EdgeMode v a = Property ("edgeMode",v) a
 
-pattern Elevation :: Txt -> SVGProperty
-pattern Elevation v = SVGProperty ("elevation",v)
+pattern Elevation :: HasFeatures a => Txt -> a -> a
+pattern Elevation v a = Property ("elevation",v) a
 
-pattern EnableBackground :: Txt -> SVGProperty
-pattern EnableBackground v = SVGProperty ("enableBackground",v)
+pattern EnableBackground :: HasFeatures a => Txt -> a -> a
+pattern EnableBackground v a = Property ("enableBackground",v) a
 
-pattern End :: Txt -> SVGProperty
-pattern End v = SVGProperty ("end",v)
+pattern End :: HasFeatures a => Txt -> a -> a
+pattern End v a = Property ("end",v) a
 
-pattern Exponent :: Txt -> SVGProperty
-pattern Exponent v = SVGProperty ("exponent",v)
+pattern Exponent :: HasFeatures a => Txt -> a -> a
+pattern Exponent v a = Property ("exponent",v) a
 
-pattern ExternalResourcesRequired :: Txt -> SVGProperty
-pattern ExternalResourcesRequired v = SVGProperty ("externalResourcesRequired",v)
+pattern ExternalResourcesRequired :: HasFeatures a => Txt -> a -> a
+pattern ExternalResourcesRequired v a = Property ("externalResourcesRequired",v) a
 
-pattern Fill :: Txt -> SVGProperty
-pattern Fill v = SVGProperty ("fill",v)
+pattern Fill :: HasFeatures a => Txt -> a -> a
+pattern Fill v a = Property ("fill",v) a
 
-pattern FillOpacity :: Txt -> SVGProperty
-pattern FillOpacity v = SVGProperty ("fillOpacity",v)
+pattern FillOpacity :: HasFeatures a => Txt -> a -> a
+pattern FillOpacity v a = Property ("fillOpacity",v) a
 
-pattern FillRule :: Txt -> SVGProperty
-pattern FillRule v = SVGProperty ("fillRule",v)
+pattern FillRule :: HasFeatures a => Txt -> a -> a
+pattern FillRule v a = Property ("fillRule",v) a
 
-pattern Filter :: Txt -> SVGProperty
-pattern Filter v = SVGProperty ("filter",v)
+pattern Filter :: HasFeatures a => Txt -> a -> a
+pattern Filter v a = Property ("filter",v) a
 
-pattern FilterRes :: Txt -> SVGProperty
-pattern FilterRes v = SVGProperty ("filterRes",v)
+pattern FilterRes :: HasFeatures a => Txt -> a -> a
+pattern FilterRes v a = Property ("filterRes",v) a
 
-pattern FilterUnits :: Txt -> SVGProperty
-pattern FilterUnits v = SVGProperty ("filterUnits",v)
+pattern FilterUnits :: HasFeatures a => Txt -> a -> a
+pattern FilterUnits v a = Property ("filterUnits",v) a
 
-pattern FloodOpacity :: Txt -> SVGProperty
-pattern FloodOpacity v = SVGProperty ("floodOpacity",v)
+pattern FloodOpacity :: HasFeatures a => Txt -> a -> a
+pattern FloodOpacity v a = Property ("floodOpacity",v) a
 
-pattern FloodColor :: Txt -> SVGProperty
-pattern FloodColor v = SVGProperty ("floodColor",v)
+pattern FloodColor :: HasFeatures a => Txt -> a -> a
+pattern FloodColor v a = Property ("floodColor",v) a
 
-pattern Focusable :: Txt -> SVGProperty
-pattern Focusable v = SVGProperty ("focusable",v)
+pattern Focusable :: HasFeatures a => Txt -> a -> a
+pattern Focusable v a = Property ("focusable",v) a
 
-pattern FontFamily :: Txt -> SVGProperty
-pattern FontFamily v = SVGProperty ("fontFamily",v)
+pattern FontFamily :: HasFeatures a => Txt -> a -> a
+pattern FontFamily v a = Property ("fontFamily",v) a
 
-pattern FontSize :: Txt -> SVGProperty
-pattern FontSize v = SVGProperty ("fontSize",v)
+pattern FontSize :: HasFeatures a => Txt -> a -> a
+pattern FontSize v a = Property ("fontSize",v) a
 
-pattern FontSizeAdjust :: Txt -> SVGProperty
-pattern FontSizeAdjust v = SVGProperty ("fontSizeAdjust",v)
+pattern FontSizeAdjust :: HasFeatures a => Txt -> a -> a
+pattern FontSizeAdjust v a = Property ("fontSizeAdjust",v) a
 
-pattern FontStretch :: Txt -> SVGProperty
-pattern FontStretch v = SVGProperty ("fontStretch",v)
+pattern FontStretch :: HasFeatures a => Txt -> a -> a
+pattern FontStretch v a = Property ("fontStretch",v) a
 
-pattern FontStyle :: Txt -> SVGProperty
-pattern FontStyle v = SVGProperty ("fontStyle",v)
+pattern FontStyle :: HasFeatures a => Txt -> a -> a
+pattern FontStyle v a = Property ("fontStyle",v) a
 
-pattern FontVariant :: Txt -> SVGProperty
-pattern FontVariant v = SVGProperty ("fontVariant",v)
+pattern FontVariant :: HasFeatures a => Txt -> a -> a
+pattern FontVariant v a = Property ("fontVariant",v) a
 
-pattern FontWeight :: Txt -> SVGProperty
-pattern FontWeight v = SVGProperty ("fontWeight",v)
+pattern FontWeight :: HasFeatures a => Txt -> a -> a
+pattern FontWeight v a = Property ("fontWeight",v) a
 
-pattern Format :: Txt -> SVGProperty
-pattern Format v = SVGProperty ("format",v)
+pattern Format :: HasFeatures a => Txt -> a -> a
+pattern Format v a = Property ("format",v) a
 
-pattern From :: Txt -> SVGProperty
-pattern From v = SVGProperty ("from",v)
+pattern From :: HasFeatures a => Txt -> a -> a
+pattern From v a = Property ("from",v) a
 
-pattern Fx :: Txt -> SVGProperty
-pattern Fx v = SVGProperty ("fx",v)
+pattern Fx :: HasFeatures a => Txt -> a -> a
+pattern Fx v a = Property ("fx",v) a
 
-pattern Fy :: Txt -> SVGProperty
-pattern Fy v = SVGProperty ("fy",v)
+pattern Fy :: HasFeatures a => Txt -> a -> a
+pattern Fy v a = Property ("fy",v) a
 
-pattern G1 :: Txt -> SVGProperty
-pattern G1 v = SVGProperty ("g1",v)
+pattern G1 :: HasFeatures a => Txt -> a -> a
+pattern G1 v a = Property ("g1",v) a
 
-pattern G2 :: Txt -> SVGProperty
-pattern G2 v = SVGProperty ("g2",v)
+pattern G2 :: HasFeatures a => Txt -> a -> a
+pattern G2 v a = Property ("g2",v) a
 
-pattern GlyphName :: Txt -> SVGProperty
-pattern GlyphName v = SVGProperty ("glyphName",v)
+pattern GlyphName :: HasFeatures a => Txt -> a -> a
+pattern GlyphName v a = Property ("glyphName",v) a
 
-pattern GlyphOrientationHorizontal :: Txt -> SVGProperty
-pattern GlyphOrientationHorizontal v = SVGProperty ("glyphOrientationHorizontal",v)
+pattern GlyphOrientationHorizontal :: HasFeatures a => Txt -> a -> a
+pattern GlyphOrientationHorizontal v a = Property ("glyphOrientationHorizontal",v) a
 
-pattern GlyphOrientationVertical :: Txt -> SVGProperty
-pattern GlyphOrientationVertical v = SVGProperty ("glyphOrientationVertical",v)
+pattern GlyphOrientationVertical :: HasFeatures a => Txt -> a -> a
+pattern GlyphOrientationVertical v a = Property ("glyphOrientationVertical",v) a
 
-pattern GlyphRef :: Txt -> SVGProperty
-pattern GlyphRef v = SVGProperty ("glyphRef",v)
+pattern GlyphRef :: HasFeatures a => Txt -> a -> a
+pattern GlyphRef v a = Property ("glyphRef",v) a
 
-pattern GradientTransform :: Txt -> SVGProperty
-pattern GradientTransform v = SVGProperty ("gradientTransform",v)
+pattern GradientTransform :: HasFeatures a => Txt -> a -> a
+pattern GradientTransform v a = Property ("gradientTransform",v) a
 
-pattern GradientUnits :: Txt -> SVGProperty
-pattern GradientUnits v = SVGProperty ("gradientUnits",v)
+pattern GradientUnits :: HasFeatures a => Txt -> a -> a
+pattern GradientUnits v a = Property ("gradientUnits",v) a
 
-pattern Hanging :: Txt -> SVGProperty
-pattern Hanging v = SVGProperty ("hanging",v)
+pattern Hanging :: HasFeatures a => Txt -> a -> a
+pattern Hanging v a = Property ("hanging",v) a
 
-pattern HorizAdvX :: Txt -> SVGProperty
-pattern HorizAdvX v = SVGProperty ("horizAdvX",v)
+pattern HorizAdvX :: HasFeatures a => Txt -> a -> a
+pattern HorizAdvX v a = Property ("horizAdvX",v) a
 
-pattern HorizOriginX :: Txt -> SVGProperty
-pattern HorizOriginX v = SVGProperty ("horizOriginX",v)
+pattern HorizOriginX :: HasFeatures a => Txt -> a -> a
+pattern HorizOriginX v a = Property ("horizOriginX",v) a
 
-pattern Ideographic :: Txt -> SVGProperty
-pattern Ideographic v = SVGProperty ("ideographic",v)
+pattern Ideographic :: HasFeatures a => Txt -> a -> a
+pattern Ideographic v a = Property ("ideographic",v) a
 
-pattern ImageRendering :: Txt -> SVGProperty
-pattern ImageRendering v = SVGProperty ("imageRendering",v)
+pattern ImageRendering :: HasFeatures a => Txt -> a -> a
+pattern ImageRendering v a = Property ("imageRendering",v) a
 
-pattern In2 :: Txt -> SVGProperty
-pattern In2 v = SVGProperty ("in2",v)
+pattern In2 :: HasFeatures a => Txt -> a -> a
+pattern In2 v a = Property ("in2",v) a
 
-pattern In :: Txt -> SVGProperty
-pattern In v = SVGProperty ("in",v)
+pattern In :: HasFeatures a => Txt -> a -> a
+pattern In v a = Property ("in",v) a
 
-pattern Inlist :: Txt -> SVGProperty
-pattern Inlist v = SVGProperty ("inlist",v)
+pattern Inlist :: HasFeatures a => Txt -> a -> a
+pattern Inlist v a = Property ("inlist",v) a
 
-pattern Intercept :: Txt -> SVGProperty
-pattern Intercept v = SVGProperty ("intercept",v)
+pattern Intercept :: HasFeatures a => Txt -> a -> a
+pattern Intercept v a = Property ("intercept",v) a
 
-pattern K1 :: Txt -> SVGProperty
-pattern K1 v = SVGProperty ("k1",v)
+pattern K1 :: HasFeatures a => Txt -> a -> a
+pattern K1 v a = Property ("k1",v) a
 
-pattern K2 :: Txt -> SVGProperty
-pattern K2 v = SVGProperty ("k2",v)
+pattern K2 :: HasFeatures a => Txt -> a -> a
+pattern K2 v a = Property ("k2",v) a
 
-pattern K3 :: Txt -> SVGProperty
-pattern K3 v = SVGProperty ("k3",v)
+pattern K3 :: HasFeatures a => Txt -> a -> a
+pattern K3 v a = Property ("k3",v) a
 
-pattern K4 :: Txt -> SVGProperty
-pattern K4 v = SVGProperty ("k4",v)
+pattern K4 :: HasFeatures a => Txt -> a -> a
+pattern K4 v a = Property ("k4",v) a
 
-pattern K :: Txt -> SVGProperty
-pattern K v = SVGProperty ("k",v)
+pattern K :: HasFeatures a => Txt -> a -> a
+pattern K v a = Property ("k",v) a
 
-pattern KernelMatrix :: Txt -> SVGProperty
-pattern KernelMatrix v = SVGProperty ("kernelMatrix",v)
+pattern KernelMatrix :: HasFeatures a => Txt -> a -> a
+pattern KernelMatrix v a = Property ("kernelMatrix",v) a
 
-pattern KernelUnitLength :: Txt -> SVGProperty
-pattern KernelUnitLength v = SVGProperty ("kernelUnitLength",v)
+pattern KernelUnitLength :: HasFeatures a => Txt -> a -> a
+pattern KernelUnitLength v a = Property ("kernelUnitLength",v) a
 
-pattern Kerning :: Txt -> SVGProperty
-pattern Kerning v = SVGProperty ("kerning",v)
+pattern Kerning :: HasFeatures a => Txt -> a -> a
+pattern Kerning v a = Property ("kerning",v) a
 
-pattern KeyPoints :: Txt -> SVGProperty
-pattern KeyPoints v = SVGProperty ("keyPoints",v)
+pattern KeyPoints :: HasFeatures a => Txt -> a -> a
+pattern KeyPoints v a = Property ("keyPoints",v) a
 
-pattern KeySplines :: Txt -> SVGProperty
-pattern KeySplines v = SVGProperty ("keySplines",v)
+pattern KeySplines :: HasFeatures a => Txt -> a -> a
+pattern KeySplines v a = Property ("keySplines",v) a
 
-pattern KeyTimes :: Txt -> SVGProperty
-pattern KeyTimes v = SVGProperty ("keyTimes",v)
+pattern KeyTimes :: HasFeatures a => Txt -> a -> a
+pattern KeyTimes v a = Property ("keyTimes",v) a
 
-pattern LengthAdjust :: Txt -> SVGProperty
-pattern LengthAdjust v = SVGProperty ("lengthAdjust",v)
+pattern LengthAdjust :: HasFeatures a => Txt -> a -> a
+pattern LengthAdjust v a = Property ("lengthAdjust",v) a
 
-pattern LetterSpacing :: Txt -> SVGProperty
-pattern LetterSpacing v = SVGProperty ("letterSpacing",v)
+pattern LetterSpacing :: HasFeatures a => Txt -> a -> a
+pattern LetterSpacing v a = Property ("letterSpacing",v) a
 
-pattern LightingColor :: Txt -> SVGProperty
-pattern LightingColor v = SVGProperty ("lightingColor",v)
+pattern LightingColor :: HasFeatures a => Txt -> a -> a
+pattern LightingColor v a = Property ("lightingColor",v) a
 
-pattern LimitingConeAngle :: Txt -> SVGProperty
-pattern LimitingConeAngle v = SVGProperty ("limitingConeAngle",v)
+pattern LimitingConeAngle :: HasFeatures a => Txt -> a -> a
+pattern LimitingConeAngle v a = Property ("limitingConeAngle",v) a
 
-pattern Local :: Txt -> SVGProperty
-pattern Local v = SVGProperty ("local",v)
+pattern Local :: HasFeatures a => Txt -> a -> a
+pattern Local v a = Property ("local",v) a
 
-pattern MarkerEnd :: Txt -> SVGProperty
-pattern MarkerEnd v = SVGProperty ("markerEnd",v)
+pattern MarkerEnd :: HasFeatures a => Txt -> a -> a
+pattern MarkerEnd v a = Property ("markerEnd",v) a
 
-pattern MarkerHeight :: Txt -> SVGProperty
-pattern MarkerHeight v = SVGProperty ("markerHeight",v)
+pattern MarkerHeight :: HasFeatures a => Txt -> a -> a
+pattern MarkerHeight v a = Property ("markerHeight",v) a
 
-pattern MarkerMid :: Txt -> SVGProperty
-pattern MarkerMid v = SVGProperty ("markerMid",v)
+pattern MarkerMid :: HasFeatures a => Txt -> a -> a
+pattern MarkerMid v a = Property ("markerMid",v) a
 
-pattern MarkerStart :: Txt -> SVGProperty
-pattern MarkerStart v = SVGProperty ("markerStart",v)
+pattern MarkerStart :: HasFeatures a => Txt -> a -> a
+pattern MarkerStart v a = Property ("markerStart",v) a
 
-pattern MarkerUnits :: Txt -> SVGProperty
-pattern MarkerUnits v = SVGProperty ("markerUnits",v)
+pattern MarkerUnits :: HasFeatures a => Txt -> a -> a
+pattern MarkerUnits v a = Property ("markerUnits",v) a
 
-pattern MarkerWidth :: Txt -> SVGProperty
-pattern MarkerWidth v = SVGProperty ("markerWidth",v)
+pattern MarkerWidth :: HasFeatures a => Txt -> a -> a
+pattern MarkerWidth v a = Property ("markerWidth",v) a
 
-pattern Mask :: Txt -> SVGProperty
-pattern Mask v = SVGProperty ("mask",v)
+pattern Mask :: HasFeatures a => Txt -> a -> a
+pattern Mask v a = Property ("mask",v) a
 
-pattern MaskContentUnits :: Txt -> SVGProperty
-pattern MaskContentUnits v = SVGProperty ("maskContentUnits",v)
+pattern MaskContentUnits :: HasFeatures a => Txt -> a -> a
+pattern MaskContentUnits v a = Property ("maskContentUnits",v) a
 
-pattern MaskUnits :: Txt -> SVGProperty
-pattern MaskUnits v = SVGProperty ("maskUnits",v)
+pattern MaskUnits :: HasFeatures a => Txt -> a -> a
+pattern MaskUnits v a = Property ("maskUnits",v) a
 
-pattern Mathematical :: Txt -> SVGProperty
-pattern Mathematical v = SVGProperty ("mathematical",v)
+pattern Mathematical :: HasFeatures a => Txt -> a -> a
+pattern Mathematical v a = Property ("mathematical",v) a
 
-pattern Mode :: Txt -> SVGProperty
-pattern Mode v = SVGProperty ("mode",v)
+pattern Mode :: HasFeatures a => Txt -> a -> a
+pattern Mode v a = Property ("mode",v) a
 
-pattern NumOctaves :: Txt -> SVGProperty
-pattern NumOctaves v = SVGProperty ("numOctaves",v)
+pattern NumOctaves :: HasFeatures a => Txt -> a -> a
+pattern NumOctaves v a = Property ("numOctaves",v) a
 
-pattern Offset :: Txt -> SVGProperty
-pattern Offset v = SVGProperty ("offset",v)
+pattern Ofaet :: HasFeatures a => Txt -> a -> a
+pattern Ofaet v a = Property ("ofaet",v) a
 
-pattern Opacity :: Txt -> SVGProperty
-pattern Opacity v = SVGProperty ("opacity",v)
+pattern Opacity :: HasFeatures a => Txt -> a -> a
+pattern Opacity v a = Property ("opacity",v) a
 
-pattern Operator :: Txt -> SVGProperty
-pattern Operator v = SVGProperty ("operator",v)
+pattern Operator :: HasFeatures a => Txt -> a -> a
+pattern Operator v a = Property ("operator",v) a
 
-pattern Order :: Txt -> SVGProperty
-pattern Order v = SVGProperty ("order",v)
+pattern Order :: HasFeatures a => Txt -> a -> a
+pattern Order v a = Property ("order",v) a
 
-pattern Orient :: Txt -> SVGProperty
-pattern Orient v = SVGProperty ("orient",v)
+pattern Orient :: HasFeatures a => Txt -> a -> a
+pattern Orient v a = Property ("orient",v) a
 
-pattern Orientation :: Txt -> SVGProperty
-pattern Orientation v = SVGProperty ("orientation",v)
+pattern Orientation :: HasFeatures a => Txt -> a -> a
+pattern Orientation v a = Property ("orientation",v) a
 
-pattern Origin :: Txt -> SVGProperty
-pattern Origin v = SVGProperty ("origin",v)
+pattern Origin :: HasFeatures a => Txt -> a -> a
+pattern Origin v a = Property ("origin",v) a
 
-pattern Overflow :: Txt -> SVGProperty
-pattern Overflow v = SVGProperty ("overflow",v)
+pattern Overflow :: HasFeatures a => Txt -> a -> a
+pattern Overflow v a = Property ("overflow",v) a
 
-pattern OverlinePosition :: Txt -> SVGProperty
-pattern OverlinePosition v = SVGProperty ("overlinePosition",v)
+pattern OverlinePosition :: HasFeatures a => Txt -> a -> a
+pattern OverlinePosition v a = Property ("overlinePosition",v) a
 
-pattern OverlineThickness :: Txt -> SVGProperty
-pattern OverlineThickness v = SVGProperty ("overlineThickness",v)
+pattern OverlineThickness :: HasFeatures a => Txt -> a -> a
+pattern OverlineThickness v a = Property ("overlineThickness",v) a
 
-pattern PaintOrder :: Txt -> SVGProperty
-pattern PaintOrder v = SVGProperty ("paintOrder",v)
+pattern PaintOrder :: HasFeatures a => Txt -> a -> a
+pattern PaintOrder v a = Property ("paintOrder",v) a
 
-pattern Panose1 :: Txt -> SVGProperty
-pattern Panose1 v = SVGProperty ("panose1",v)
+pattern Panose1 :: HasFeatures a => Txt -> a -> a
+pattern Panose1 v a = Property ("panose1",v) a
 
-pattern PathLength :: Txt -> SVGProperty
-pattern PathLength v = SVGProperty ("pathLength",v)
+pattern PathLength :: HasFeatures a => Txt -> a -> a
+pattern PathLength v a = Property ("pathLength",v) a
 
-pattern PatternContentUnits :: Txt -> SVGProperty
-pattern PatternContentUnits v = SVGProperty ("patternContentUnits",v)
+pattern PatternContentUnits :: HasFeatures a => Txt -> a -> a
+pattern PatternContentUnits v a = Property ("patternContentUnits",v) a
 
-pattern PatternTransform :: Txt -> SVGProperty
-pattern PatternTransform v = SVGProperty ("patternTransform",v)
+pattern PatternTransform :: HasFeatures a => Txt -> a -> a
+pattern PatternTransform v a = Property ("patternTransform",v) a
 
-pattern PatternUnits :: Txt -> SVGProperty
-pattern PatternUnits v = SVGProperty ("patternUnits",v)
+pattern PatternUnits :: HasFeatures a => Txt -> a -> a
+pattern PatternUnits v a = Property ("patternUnits",v) a
 
-pattern PointerEvents :: Txt -> SVGProperty
-pattern PointerEvents v = SVGProperty ("pointerEvents",v)
+pattern PointerEvents :: HasFeatures a => Txt -> a -> a
+pattern PointerEvents v a = Property ("pointerEvents",v) a
 
-pattern Points :: Txt -> SVGProperty
-pattern Points v = SVGProperty ("points",v)
+pattern Points :: HasFeatures a => Txt -> a -> a
+pattern Points v a = Property ("points",v) a
 
-pattern PointsAtX :: Txt -> SVGProperty
-pattern PointsAtX v = SVGProperty ("pointsAtX",v)
+pattern PointsAtX :: HasFeatures a => Txt -> a -> a
+pattern PointsAtX v a = Property ("pointsAtX",v) a
 
-pattern PointsAtY :: Txt -> SVGProperty
-pattern PointsAtY v = SVGProperty ("pointsAtY",v)
+pattern PointsAtY :: HasFeatures a => Txt -> a -> a
+pattern PointsAtY v a = Property ("pointsAtY",v) a
 
-pattern PointsAtZ :: Txt -> SVGProperty
-pattern PointsAtZ v = SVGProperty ("pointsAtZ",v)
+pattern PointsAtZ :: HasFeatures a => Txt -> a -> a
+pattern PointsAtZ v a = Property ("pointsAtZ",v) a
 
-pattern Prefix :: Txt -> SVGProperty
-pattern Prefix v = SVGProperty ("prefix",v)
+pattern Prefix :: HasFeatures a => Txt -> a -> a
+pattern Prefix v a = Property ("prefix",v) a
 
-pattern PreserveAlpha :: Txt -> SVGProperty
-pattern PreserveAlpha v = SVGProperty ("preserveAlpha",v)
+pattern PreserveAlpha :: HasFeatures a => Txt -> a -> a
+pattern PreserveAlpha v a = Property ("preserveAlpha",v) a
 
-pattern PreserveAspectRatio :: Txt -> SVGProperty
-pattern PreserveAspectRatio v = SVGProperty ("preserveAspectRatio",v)
+pattern PreserveAspectRatio :: HasFeatures a => Txt -> a -> a
+pattern PreserveAspectRatio v a = Property ("preserveAspectRatio",v) a
 
-pattern PrimitiveUnits :: Txt -> SVGProperty
-pattern PrimitiveUnits v = SVGProperty ("primitiveUnits",v)
+pattern PrimitiveUnits :: HasFeatures a => Txt -> a -> a
+pattern PrimitiveUnits v a = Property ("primitiveUnits",v) a
 
-pattern Property :: Txt -> SVGProperty
-pattern Property v = SVGProperty ("property",v)
+pattern SVGProperty :: HasFeatures a => Txt -> a -> a
+pattern SVGProperty v a = Property ("property",v) a
 
-pattern R :: Txt -> SVGProperty
-pattern R v = SVGProperty ("r",v)
+pattern R :: HasFeatures a => Txt -> a -> a
+pattern R v a = Property ("r",v) a
 
-pattern Radius :: Txt -> SVGProperty
-pattern Radius v = SVGProperty ("radius",v)
+pattern Radius :: HasFeatures a => Txt -> a -> a
+pattern Radius v a = Property ("radius",v) a
 
-pattern RefX :: Txt -> SVGProperty
-pattern RefX v = SVGProperty ("refX",v)
+pattern RefX :: HasFeatures a => Txt -> a -> a
+pattern RefX v a = Property ("refX",v) a
 
-pattern RefY :: Txt -> SVGProperty
-pattern RefY v = SVGProperty ("refY",v)
+pattern RefY :: HasFeatures a => Txt -> a -> a
+pattern RefY v a = Property ("refY",v) a
 
-pattern RenderingIntent :: Txt -> SVGProperty
-pattern RenderingIntent v = SVGProperty ("renderingIntent",v)
+pattern RenderingIntent :: HasFeatures a => Txt -> a -> a
+pattern RenderingIntent v a = Property ("renderingIntent",v) a
 
-pattern RepeatCount :: Txt -> SVGProperty
-pattern RepeatCount v = SVGProperty ("repeatCount",v)
+pattern RepeatCount :: HasFeatures a => Txt -> a -> a
+pattern RepeatCount v a = Property ("repeatCount",v) a
 
-pattern RepeatDur :: Txt -> SVGProperty
-pattern RepeatDur v = SVGProperty ("repeatDur",v)
+pattern RepeatDur :: HasFeatures a => Txt -> a -> a
+pattern RepeatDur v a = Property ("repeatDur",v) a
 
-pattern RequiredExtensions :: Txt -> SVGProperty
-pattern RequiredExtensions v = SVGProperty ("requiredExtensions",v)
+pattern RequiredExtensions :: HasFeatures a => Txt -> a -> a
+pattern RequiredExtensions v a = Property ("requiredExtensions",v) a
 
-pattern RequiredFeatures :: Txt -> SVGProperty
-pattern RequiredFeatures v = SVGProperty ("requiredFeatures",v)
+pattern RequiredFeatures :: HasFeatures a => Txt -> a -> a
+pattern RequiredFeatures v a = Property ("requiredFeatures",v) a
 
-pattern Resource :: Txt -> SVGProperty
-pattern Resource v = SVGProperty ("resource",v)
+pattern Resource :: HasFeatures a => Txt -> a -> a
+pattern Resource v a = Property ("resource",v) a
 
-pattern Restart :: Txt -> SVGProperty
-pattern Restart v = SVGProperty ("restart",v)
+pattern Restart :: HasFeatures a => Txt -> a -> a
+pattern Restart v a = Property ("restart",v) a
 
-pattern Result :: Txt -> SVGProperty
-pattern Result v = SVGProperty ("result",v)
+pattern Result :: HasFeatures a => Txt -> a -> a
+pattern Result v a = Property ("result",v) a
 
-pattern Results :: Txt -> SVGProperty
-pattern Results v = SVGProperty ("results",v)
+pattern Results :: HasFeatures a => Txt -> a -> a
+pattern Results v a = Property ("results",v) a
 
-pattern Rotate :: Txt -> SVGProperty
-pattern Rotate v = SVGProperty ("rotate",v)
+pattern Rotate :: HasFeatures a => Txt -> a -> a
+pattern Rotate v a = Property ("rotate",v) a
 
-pattern Rx :: Txt -> SVGProperty
-pattern Rx v = SVGProperty ("rx",v)
+pattern Rx :: HasFeatures a => Txt -> a -> a
+pattern Rx v a = Property ("rx",v) a
 
-pattern Ry :: Txt -> SVGProperty
-pattern Ry v = SVGProperty ("ry",v)
+pattern Ry :: HasFeatures a => Txt -> a -> a
+pattern Ry v a = Property ("ry",v) a
 
-pattern Scale :: Txt -> SVGProperty
-pattern Scale v = SVGProperty ("scale",v)
+pattern Scale :: HasFeatures a => Txt -> a -> a
+pattern Scale v a = Property ("scale",v) a
 
-pattern Security :: Txt -> SVGProperty
-pattern Security v = SVGProperty ("security",v)
+pattern Security :: HasFeatures a => Txt -> a -> a
+pattern Security v a = Property ("security",v) a
 
-pattern Seed :: Txt -> SVGProperty
-pattern Seed v = SVGProperty ("seed",v)
+pattern Seed :: HasFeatures a => Txt -> a -> a
+pattern Seed v a = Property ("seed",v) a
 
-pattern ShapeRendering :: Txt -> SVGProperty
-pattern ShapeRendering v = SVGProperty ("shapeRendering",v)
+pattern ShapeRendering :: HasFeatures a => Txt -> a -> a
+pattern ShapeRendering v a = Property ("shapeRendering",v) a
 
-pattern Slope :: Txt -> SVGProperty
-pattern Slope v = SVGProperty ("slope",v)
+pattern Slope :: HasFeatures a => Txt -> a -> a
+pattern Slope v a = Property ("slope",v) a
 
-pattern Spacing :: Txt -> SVGProperty
-pattern Spacing v = SVGProperty ("spacing",v)
+pattern Spacing :: HasFeatures a => Txt -> a -> a
+pattern Spacing v a = Property ("spacing",v) a
 
-pattern SpecularConstant :: Txt -> SVGProperty
-pattern SpecularConstant v = SVGProperty ("specularConstant",v)
+pattern SpecularConstant :: HasFeatures a => Txt -> a -> a
+pattern SpecularConstant v a = Property ("specularConstant",v) a
 
-pattern SpecularExponent :: Txt -> SVGProperty
-pattern SpecularExponent v = SVGProperty ("specularExponent",v)
+pattern SpecularExponent :: HasFeatures a => Txt -> a -> a
+pattern SpecularExponent v a = Property ("specularExponent",v) a
 
-pattern Speed :: Txt -> SVGProperty
-pattern Speed v = SVGProperty ("speed",v)
+pattern Speed :: HasFeatures a => Txt -> a -> a
+pattern Speed v a = Property ("speed",v) a
 
-pattern SpreadMethod :: Txt -> SVGProperty
-pattern SpreadMethod v = SVGProperty ("spreadMethod",v)
+pattern SpreadMethod :: HasFeatures a => Txt -> a -> a
+pattern SpreadMethod v a = Property ("spreadMethod",v) a
 
-pattern StartOffset :: Txt -> SVGProperty
-pattern StartOffset v = SVGProperty ("startOffset",v)
+pattern StartOfaet :: HasFeatures a => Txt -> a -> a
+pattern StartOfaet v a = Property ("startOfaet",v) a
 
-pattern StdDeviation :: Txt -> SVGProperty
-pattern StdDeviation v = SVGProperty ("stdDeviation",v)
+pattern StdDeviation :: HasFeatures a => Txt -> a -> a
+pattern StdDeviation v a = Property ("stdDeviation",v) a
 
-pattern Stemh :: Txt -> SVGProperty
-pattern Stemh v = SVGProperty ("stemh",v)
+pattern Stemh :: HasFeatures a => Txt -> a -> a
+pattern Stemh v a = Property ("stemh",v) a
 
-pattern Stemv :: Txt -> SVGProperty
-pattern Stemv v = SVGProperty ("stemv",v)
+pattern Stemv :: HasFeatures a => Txt -> a -> a
+pattern Stemv v a = Property ("stemv",v) a
 
-pattern StitchTiles :: Txt -> SVGProperty
-pattern StitchTiles v = SVGProperty ("stitchTiles",v)
+pattern StitchTiles :: HasFeatures a => Txt -> a -> a
+pattern StitchTiles v a = Property ("stitchTiles",v) a
 
-pattern StopColor :: Txt -> SVGProperty
-pattern StopColor v = SVGProperty ("stopColor",v)
+pattern StopColor :: HasFeatures a => Txt -> a -> a
+pattern StopColor v a = Property ("stopColor",v) a
 
-pattern StopOpacity :: Txt -> SVGProperty
-pattern StopOpacity v = SVGProperty ("stopOpacity",v)
+pattern StopOpacity :: HasFeatures a => Txt -> a -> a
+pattern StopOpacity v a = Property ("stopOpacity",v) a
 
-pattern StrikethroughPosition :: Txt -> SVGProperty
-pattern StrikethroughPosition v = SVGProperty ("strikethroughPosition",v)
+pattern StrikethroughPosition :: HasFeatures a => Txt -> a -> a
+pattern StrikethroughPosition v a = Property ("strikethroughPosition",v) a
 
-pattern StrikethroughThickness :: Txt -> SVGProperty
-pattern StrikethroughThickness v = SVGProperty ("strikethroughThickness",v)
+pattern StrikethroughThickness :: HasFeatures a => Txt -> a -> a
+pattern StrikethroughThickness v a = Property ("strikethroughThickness",v) a
 
-pattern String :: Txt -> SVGProperty
-pattern String v = SVGProperty ("string",v)
+pattern String :: HasFeatures a => Txt -> a -> a
+pattern String v a = Property ("string",v) a
 
-pattern Stroke :: Txt -> SVGProperty
-pattern Stroke v = SVGProperty ("stroke",v)
+pattern Stroke :: HasFeatures a => Txt -> a -> a
+pattern Stroke v a = Property ("stroke",v) a
 
-pattern StrokeDasharray :: Txt -> SVGProperty
-pattern StrokeDasharray v = SVGProperty ("strokeDasharray",v)
+pattern StrokeDasharray :: HasFeatures a => Txt -> a -> a
+pattern StrokeDasharray v a = Property ("strokeDasharray",v) a
 
-pattern StrokeDashoffset :: Txt -> SVGProperty
-pattern StrokeDashoffset v = SVGProperty ("strokeDashoffset",v)
+pattern StrokeDashofaet :: HasFeatures a => Txt -> a -> a
+pattern StrokeDashofaet v a = Property ("strokeDashofaet",v) a
 
-pattern StrokeLinecap :: Txt -> SVGProperty
-pattern StrokeLinecap v = SVGProperty ("strokeLinecap",v)
+pattern StrokeLinecap :: HasFeatures a => Txt -> a -> a
+pattern StrokeLinecap v a = Property ("strokeLinecap",v) a
 
-pattern StrokeLinejoin :: Txt -> SVGProperty
-pattern StrokeLinejoin v = SVGProperty ("strokeLinejoin",v)
+pattern StrokeLinejoin :: HasFeatures a => Txt -> a -> a
+pattern StrokeLinejoin v a = Property ("strokeLinejoin",v) a
 
-pattern StrokeMiterlimit :: Txt -> SVGProperty
-pattern StrokeMiterlimit v = SVGProperty ("strokeMiterlimit",v)
+pattern StrokeMiterlimit :: HasFeatures a => Txt -> a -> a
+pattern StrokeMiterlimit v a = Property ("strokeMiterlimit",v) a
 
-pattern StrokeWidth :: Txt -> SVGProperty
-pattern StrokeWidth v = SVGProperty ("strokeWidth",v)
+pattern StrokeWidth :: HasFeatures a => Txt -> a -> a
+pattern StrokeWidth v a = Property ("strokeWidth",v) a
 
-pattern StrokeOpacity :: Txt -> SVGProperty
-pattern StrokeOpacity v = SVGProperty ("strokeOpacity",v)
+pattern StrokeOpacity :: HasFeatures a => Txt -> a -> a
+pattern StrokeOpacity v a = Property ("strokeOpacity",v) a
 
-pattern SuppressContentEditableWarning :: Txt -> SVGProperty
-pattern SuppressContentEditableWarning v = SVGProperty ("suppressContentEditableWarning",v)
+pattern SuppressContentEditableWarning :: HasFeatures a => Txt -> a -> a
+pattern SuppressContentEditableWarning v a = Property ("suppressContentEditableWarning",v) a
 
-pattern SuppressHydrationWarning :: Txt -> SVGProperty
-pattern SuppressHydrationWarning v = SVGProperty ("suppressHydrationWarning",v)
+pattern SuppressHydrationWarning :: HasFeatures a => Txt -> a -> a
+pattern SuppressHydrationWarning v a = Property ("suppressHydrationWarning",v) a
 
-pattern SurfaceScale :: Txt -> SVGProperty
-pattern SurfaceScale v = SVGProperty ("surfaceScale",v)
+pattern SurfaceScale :: HasFeatures a => Txt -> a -> a
+pattern SurfaceScale v a = Property ("surfaceScale",v) a
 
-pattern SystemLanguage :: Txt -> SVGProperty
-pattern SystemLanguage v = SVGProperty ("systemLanguage",v)
+pattern SystemLanguage :: HasFeatures a => Txt -> a -> a
+pattern SystemLanguage v a = Property ("systemLanguage",v) a
 
-pattern TableValues :: Txt -> SVGProperty
-pattern TableValues v = SVGProperty ("tableValues",v)
+pattern TableValues :: HasFeatures a => Txt -> a -> a
+pattern TableValues v a = Property ("tableValues",v) a
 
-pattern TargetX :: Txt -> SVGProperty
-pattern TargetX v = SVGProperty ("targetX",v)
+pattern TargetX :: HasFeatures a => Txt -> a -> a
+pattern TargetX v a = Property ("targetX",v) a
 
-pattern TargetY :: Txt -> SVGProperty
-pattern TargetY v = SVGProperty ("targetY",v)
+pattern TargetY :: HasFeatures a => Txt -> a -> a
+pattern TargetY v a = Property ("targetY",v) a
 
-pattern TextAnchor :: Txt -> SVGProperty
-pattern TextAnchor v = SVGProperty ("textAnchor",v)
+pattern TextAnchor :: HasFeatures a => Txt -> a -> a
+pattern TextAnchor v a = Property ("textAnchor",v) a
 
-pattern TextDecoration :: Txt -> SVGProperty
-pattern TextDecoration v = SVGProperty ("textDecoration",v)
+pattern TextDecoration :: HasFeatures a => Txt -> a -> a
+pattern TextDecoration v a = Property ("textDecoration",v) a
 
-pattern TextLength :: Txt -> SVGProperty
-pattern TextLength v = SVGProperty ("textLength",v)
+pattern TextLength :: HasFeatures a => Txt -> a -> a
+pattern TextLength v a = Property ("textLength",v) a
 
-pattern TextRendering :: Txt -> SVGProperty
-pattern TextRendering v = SVGProperty ("textRendering",v)
+pattern TextRendering :: HasFeatures a => Txt -> a -> a
+pattern TextRendering v a = Property ("textRendering",v) a
 
-pattern To :: Txt -> SVGProperty
-pattern To v = SVGProperty ("to",v)
+pattern To :: HasFeatures a => Txt -> a -> a
+pattern To v a = Property ("to",v) a
 
-pattern Transform :: Txt -> SVGProperty
-pattern Transform v = SVGProperty ("transform",v)
+pattern Transform :: HasFeatures a => Txt -> a -> a
+pattern Transform v a = Property ("transform",v) a
 
-pattern Typeof :: Txt -> SVGProperty
-pattern Typeof v = SVGProperty ("typeof",v)
+pattern Typeof :: HasFeatures a => Txt -> a -> a
+pattern Typeof v a = Property ("typeof",v) a
 
-pattern U1 :: Txt -> SVGProperty
-pattern U1 v = SVGProperty ("u1",v)
+pattern U1 :: HasFeatures a => Txt -> a -> a
+pattern U1 v a = Property ("u1",v) a
 
-pattern U2 :: Txt -> SVGProperty
-pattern U2 v = SVGProperty ("u2",v)
+pattern U2 :: HasFeatures a => Txt -> a -> a
+pattern U2 v a = Property ("u2",v) a
 
-pattern UnderlinePosition :: Txt -> SVGProperty
-pattern UnderlinePosition v = SVGProperty ("underlinePosition",v)
+pattern UnderlinePosition :: HasFeatures a => Txt -> a -> a
+pattern UnderlinePosition v a = Property ("underlinePosition",v) a
 
-pattern UnderlineThickness :: Txt -> SVGProperty
-pattern UnderlineThickness v = SVGProperty ("underlineThickness",v)
+pattern UnderlineThickness :: HasFeatures a => Txt -> a -> a
+pattern UnderlineThickness v a = Property ("underlineThickness",v) a
 
-pattern Unicode :: Txt -> SVGProperty
-pattern Unicode v = SVGProperty ("unicode",v)
+pattern Unicode :: HasFeatures a => Txt -> a -> a
+pattern Unicode v a = Property ("unicode",v) a
 
-pattern UnicodeBidi :: Txt -> SVGProperty
-pattern UnicodeBidi v = SVGProperty ("unicodeBidi",v)
+pattern UnicodeBidi :: HasFeatures a => Txt -> a -> a
+pattern UnicodeBidi v a = Property ("unicodeBidi",v) a
 
-pattern UnicodeRange :: Txt -> SVGProperty
-pattern UnicodeRange v = SVGProperty ("unicodeRange",v)
+pattern UnicodeRange :: HasFeatures a => Txt -> a -> a
+pattern UnicodeRange v a = Property ("unicodeRange",v) a
 
-pattern UnitsPerEm :: Txt -> SVGProperty
-pattern UnitsPerEm v = SVGProperty ("unitsPerEm",v)
+pattern UnitsPerEm :: HasFeatures a => Txt -> a -> a
+pattern UnitsPerEm v a = Property ("unitsPerEm",v) a
 
-pattern Unselectable :: Txt -> SVGProperty
-pattern Unselectable v = SVGProperty ("unselectable",v)
+pattern Unselectable :: HasFeatures a => Txt -> a -> a
+pattern Unselectable v a = Property ("unselectable",v) a
 
-pattern VAlphabetic :: Txt -> SVGProperty
-pattern VAlphabetic v = SVGProperty ("vAlphabetic",v)
+pattern VAlphabetic :: HasFeatures a => Txt -> a -> a
+pattern VAlphabetic v a = Property ("vAlphabetic",v) a
 
-pattern Values :: Txt -> SVGProperty
-pattern Values v = SVGProperty ("values",v)
+pattern Values :: HasFeatures a => Txt -> a -> a
+pattern Values v a = Property ("values",v) a
 
-pattern VectorEffect :: Txt -> SVGProperty
-pattern VectorEffect v = SVGProperty ("vectorEffect",v)
+pattern VectorEffect :: HasFeatures a => Txt -> a -> a
+pattern VectorEffect v a = Property ("vectorEffect",v) a
 
-pattern Version :: Txt -> SVGProperty
-pattern Version v = SVGProperty ("version",v)
+pattern Version :: HasFeatures a => Txt -> a -> a
+pattern Version v a = Property ("version",v) a
 
-pattern VertAdvY :: Txt -> SVGProperty
-pattern VertAdvY v = SVGProperty ("vertAdvY",v)
+pattern VertAdvY :: HasFeatures a => Txt -> a -> a
+pattern VertAdvY v a = Property ("vertAdvY",v) a
 
-pattern VertOriginX :: Txt -> SVGProperty
-pattern VertOriginX v = SVGProperty ("vertOriginX",v)
+pattern VertOriginX :: HasFeatures a => Txt -> a -> a
+pattern VertOriginX v a = Property ("vertOriginX",v) a
 
-pattern VertOriginY :: Txt -> SVGProperty
-pattern VertOriginY v = SVGProperty ("vertOriginY",v)
+pattern VertOriginY :: HasFeatures a => Txt -> a -> a
+pattern VertOriginY v a = Property ("vertOriginY",v) a
 
-pattern VHanging :: Txt -> SVGProperty
-pattern VHanging v = SVGProperty ("vHanging",v)
+pattern VHanging :: HasFeatures a => Txt -> a -> a
+pattern VHanging v a = Property ("vHanging",v) a
 
-pattern Id :: Txt -> SVGProperty
-pattern Id v = SVGProperty ("id",v)
+pattern Id :: HasFeatures a => Txt -> a -> a
+pattern Id v a = Property ("id",v) a
 
-pattern VIdeographic :: Txt -> SVGProperty
-pattern VIdeographic v = SVGProperty ("vIdeographic",v)
+pattern VIdeographic :: HasFeatures a => Txt -> a -> a
+pattern VIdeographic v a = Property ("vIdeographic",v) a
 
-pattern ViewBox :: Txt -> SVGProperty
-pattern ViewBox v = SVGProperty ("viewBox",v)
+pattern ViewBox :: HasFeatures a => Txt -> a -> a
+pattern ViewBox v a = Property ("viewBox",v) a
 
-pattern ViewTarget :: Txt -> SVGProperty
-pattern ViewTarget v = SVGProperty ("viewTarget",v)
+pattern ViewTarget :: HasFeatures a => Txt -> a -> a
+pattern ViewTarget v a = Property ("viewTarget",v) a
 
-pattern Visibility :: Txt -> SVGProperty
-pattern Visibility v = SVGProperty ("visibility",v)
+pattern Visibility :: HasFeatures a => Txt -> a -> a
+pattern Visibility v a = Property ("visibility",v) a
 
-pattern VMathematical :: Txt -> SVGProperty
-pattern VMathematical v = SVGProperty ("vMathematical",v)
+pattern VMathematical :: HasFeatures a => Txt -> a -> a
+pattern VMathematical v a = Property ("vMathematical",v) a
 
-pattern Vocab :: Txt -> SVGProperty
-pattern Vocab v = SVGProperty ("vocab",v)
+pattern Vocab :: HasFeatures a => Txt -> a -> a
+pattern Vocab v a = Property ("vocab",v) a
 
-pattern Widths :: Txt -> SVGProperty
-pattern Widths v = SVGProperty ("widths",v)
+pattern Widths :: HasFeatures a => Txt -> a -> a
+pattern Widths v a = Property ("widths",v) a
 
-pattern WordSpacing :: Txt -> SVGProperty
-pattern WordSpacing v = SVGProperty ("wordSpacing",v)
+pattern WordSpacing :: HasFeatures a => Txt -> a -> a
+pattern WordSpacing v a = Property ("wordSpacing",v) a
 
-pattern WritingMode :: Txt -> SVGProperty
-pattern WritingMode v = SVGProperty ("writingMode",v)
+pattern WritingMode :: HasFeatures a => Txt -> a -> a
+pattern WritingMode v a = Property ("writingMode",v) a
 
-pattern X1 :: Txt -> SVGProperty
-pattern X1 v = SVGProperty ("x1",v)
+pattern X1 :: HasFeatures a => Txt -> a -> a
+pattern X1 v a = Property ("x1",v) a
 
-pattern X2 :: Txt -> SVGProperty
-pattern X2 v = SVGProperty ("x2",v)
+pattern X2 :: HasFeatures a => Txt -> a -> a
+pattern X2 v a = Property ("x2",v) a
 
-pattern X :: Txt -> SVGProperty
-pattern X v = SVGProperty ("x",v)
+pattern X :: HasFeatures a => Txt -> a -> a
+pattern X v a = Property ("x",v) a
 
-pattern XChannelSelector :: Txt -> SVGProperty
-pattern XChannelSelector v = SVGProperty ("xChannelSelector",v)
+pattern XChannelSelector :: HasFeatures a => Txt -> a -> a
+pattern XChannelSelector v a = Property ("xChannelSelector",v) a
 
-pattern XHeight :: Txt -> SVGProperty
-pattern XHeight v = SVGProperty ("xHeight",v)
+pattern XHeight :: HasFeatures a => Txt -> a -> a
+pattern XHeight v a = Property ("xHeight",v) a
 
-pattern XlinkActuate :: Txt -> SVGProperty
-pattern XlinkActuate v = SVGProperty ("xlinkActuate",v)
+pattern XlinkActuate :: HasFeatures a => Txt -> a -> a
+pattern XlinkActuate v a = Property ("xlinkActuate",v) a
 
-pattern XlinkArcrole :: Txt -> SVGProperty
-pattern XlinkArcrole v = SVGProperty ("xlinkArcrole",v)
+pattern XlinkArcrole :: HasFeatures a => Txt -> a -> a
+pattern XlinkArcrole v a = Property ("xlinkArcrole",v) a
 
-pattern XlinkHref :: Txt -> SVGProperty
-pattern XlinkHref v = SVGProperty ("xlinkHref",v)
+pattern XlinkHref :: HasFeatures a => Txt -> a -> a
+pattern XlinkHref v a = Property ("xlinkHref",v) a
 
-pattern XlinkRole :: Txt -> SVGProperty
-pattern XlinkRole v = SVGProperty ("xlinkRole",v)
+pattern XlinkRole :: HasFeatures a => Txt -> a -> a
+pattern XlinkRole v a = Property ("xlinkRole",v) a
 
-pattern XlinkShow :: Txt -> SVGProperty
-pattern XlinkShow v = SVGProperty ("xlinkShow",v)
+pattern XlinkShow :: HasFeatures a => Txt -> a -> a
+pattern XlinkShow v a = Property ("xlinkShow",v) a
 
-pattern XlinkTitle :: Txt -> SVGProperty
-pattern XlinkTitle v = SVGProperty ("xlinkTitle",v)
+pattern XlinkTitle :: HasFeatures a => Txt -> a -> a
+pattern XlinkTitle v a = Property ("xlinkTitle",v) a
 
-pattern XlinkType :: Txt -> SVGProperty
-pattern XlinkType v = SVGProperty ("xlinkType",v)
+pattern XlinkType :: HasFeatures a => Txt -> a -> a
+pattern XlinkType v a = Property ("xlinkType",v) a
 
-pattern XmlBase :: Txt -> SVGProperty
-pattern XmlBase v = SVGProperty ("xmlBase",v)
+pattern XmlBase :: HasFeatures a => Txt -> a -> a
+pattern XmlBase v a = Property ("xmlBase",v) a
 
-pattern XmlLang :: Txt -> SVGProperty
-pattern XmlLang v = SVGProperty ("xmlLang",v)
+pattern XmlLang :: HasFeatures a => Txt -> a -> a
+pattern XmlLang v a = Property ("xmlLang",v) a
 
-pattern Xmlns :: Txt -> SVGProperty
-pattern Xmlns v = SVGProperty ("xmlns",v)
+pattern Xmlns :: HasFeatures a => Txt -> a -> a
+pattern Xmlns v a = Property ("xmlns",v) a
 
-pattern XmlnsXlink :: Txt -> SVGProperty
-pattern XmlnsXlink v = SVGProperty ("xmlnsXlink",v)
+pattern XmlnsXlink :: HasFeatures a => Txt -> a -> a
+pattern XmlnsXlink v a = Property ("xmlnsXlink",v) a
 
-pattern XmlSpace :: Txt -> SVGProperty
-pattern XmlSpace v = SVGProperty ("xmlSpace",v)
+pattern XmlSpace :: HasFeatures a => Txt -> a -> a
+pattern XmlSpace v a = Property ("xmlSpace",v) a
 
-pattern Y1 :: Txt -> SVGProperty
-pattern Y1 v = SVGProperty ("y1",v)
+pattern Y1 :: HasFeatures a => Txt -> a -> a
+pattern Y1 v a = Property ("y1",v) a
 
-pattern Y2 :: Txt -> SVGProperty
-pattern Y2 v = SVGProperty ("y2",v)
+pattern Y2 :: HasFeatures a => Txt -> a -> a
+pattern Y2 v a = Property ("y2",v) a
 
-pattern Y :: Txt -> SVGProperty
-pattern Y v = SVGProperty ("y",v)
+pattern Y :: HasFeatures a => Txt -> a -> a
+pattern Y v a = Property ("y",v) a
 
-pattern YChannelSelector :: Txt -> SVGProperty
-pattern YChannelSelector v = SVGProperty ("yChannelSelector",v)
+pattern YChannelSelector :: HasFeatures a => Txt -> a -> a
+pattern YChannelSelector v a = Property ("yChannelSelector",v) a
 
-pattern Z :: Txt -> SVGProperty
-pattern Z v = SVGProperty ("z",v)
+pattern Z :: HasFeatures a => Txt -> a -> a
+pattern Z v a = Property ("z",v) a
 
-pattern ZoomAndPan :: Txt -> SVGProperty
-pattern ZoomAndPan v = SVGProperty ("zoomAndPan",v)
+pattern ZoomAndPan :: HasFeatures a => Txt -> a -> a
+pattern ZoomAndPan v a = Property ("zoomAndPan",v) a
