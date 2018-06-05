@@ -103,8 +103,8 @@ pattern CapHeight v a = Property "capHeight" v a
 pattern Clip :: HasFeatures a => Txt -> a -> a
 pattern Clip v a = Property "clip" v a
 
-pattern ClipPath :: HasFeatures a => Txt -> a -> a
-pattern ClipPath v a = Property "clipPath" v a
+pattern ClipPath_ :: HasFeatures a => Txt -> a -> a
+pattern ClipPath_ v a = Property "clipPath" v a
 
 pattern ClipPathUnits :: HasFeatures a => Txt -> a -> a
 pattern ClipPathUnits v a = Property "clipPathUnits" v a
@@ -121,8 +121,8 @@ pattern ColorInterpolation v a = Property "colorInterpolation" v a
 pattern ColorInterpolationFilters :: HasFeatures a => Txt -> a -> a
 pattern ColorInterpolationFilters v a = Property "colorInterpolationFilters" v a
 
-pattern ColorProfile :: HasFeatures a => Txt -> a -> a
-pattern ColorProfile v a = Property "colorProfile" v a
+pattern ColorProfile_ :: HasFeatures a => Txt -> a -> a
+pattern ColorProfile_ v a = Property "colorProfile" v a
 
 pattern ColorRendering :: HasFeatures a => Txt -> a -> a
 pattern ColorRendering v a = Property "colorRendering" v a
@@ -133,8 +133,8 @@ pattern ContentScriptType v a = Property "contentScriptType" v a
 pattern ContentStyleType :: HasFeatures a => Txt -> a -> a
 pattern ContentStyleType v a = Property "contentStyleType" v a
 
-pattern Cursor :: HasFeatures a => Txt -> a -> a
-pattern Cursor v a = Property "cursor" v a
+pattern Cursor_ :: HasFeatures a => Txt -> a -> a
+pattern Cursor_ v a = Property "cursor" v a
 
 pattern Cx :: HasFeatures a => Txt -> a -> a
 pattern Cx v a = Property "cx" v a
@@ -205,8 +205,8 @@ pattern FillOpacity v a = Property "fillOpacity" v a
 pattern FillRule :: HasFeatures a => Txt -> a -> a
 pattern FillRule v a = Property "fillRule" v a
 
-pattern Filter :: HasFeatures a => Txt -> a -> a
-pattern Filter v a = Property "filter" v a
+pattern Filter_ :: HasFeatures a => Txt -> a -> a
+pattern Filter_ v a = Property "filter" v a
 
 pattern FilterRes :: HasFeatures a => Txt -> a -> a
 pattern FilterRes v a = Property "filterRes" v a
@@ -271,8 +271,8 @@ pattern GlyphOrientationHorizontal v a = Property "glyphOrientationHorizontal" v
 pattern GlyphOrientationVertical :: HasFeatures a => Txt -> a -> a
 pattern GlyphOrientationVertical v a = Property "glyphOrientationVertical" v a
 
-pattern GlyphRef :: HasFeatures a => Txt -> a -> a
-pattern GlyphRef v a = Property "glyphRef" v a
+pattern GlyphRef_ :: HasFeatures a => Txt -> a -> a
+pattern GlyphRef_ v a = Property "glyphRef" v a
 
 pattern GradientTransform :: HasFeatures a => Txt -> a -> a
 pattern GradientTransform v a = Property "gradientTransform" v a
@@ -373,8 +373,8 @@ pattern MarkerUnits v a = Property "markerUnits" v a
 pattern MarkerWidth :: HasFeatures a => Txt -> a -> a
 pattern MarkerWidth v a = Property "markerWidth" v a
 
-pattern Mask :: HasFeatures a => Txt -> a -> a
-pattern Mask v a = Property "mask" v a
+pattern Mask_ :: HasFeatures a => Txt -> a -> a
+pattern Mask_ v a = Property "mask" v a
 
 pattern MaskContentUnits :: HasFeatures a => Txt -> a -> a
 pattern MaskContentUnits v a = Property "maskContentUnits" v a

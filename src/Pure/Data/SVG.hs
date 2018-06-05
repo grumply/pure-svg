@@ -4,8 +4,8 @@ module Pure.Data.SVG where
 import Pure.Data.View (View)
 import Pure.Data.View.Patterns (pattern SimpleSVG)
 
-pattern A :: View
-pattern A = SimpleSVG "a"
+pattern A_ :: View
+pattern A_ = SimpleSVG "a"
 
 pattern Audio :: View
 pattern Audio = SimpleSVG "audio"
@@ -280,8 +280,8 @@ pattern Use = SimpleSVG "use"
 pattern Video :: View
 pattern Video = SimpleSVG "video"
 
-pattern View :: View
-pattern View = SimpleSVG "view"
+pattern View_ :: View
+pattern View_ = SimpleSVG "view"
 
 pattern Vkern :: View
 pattern Vkern = SimpleSVG "vkern"
