@@ -35,7 +35,7 @@ pattern About :: HasFeatures a => Txt -> a -> a
 pattern About v a = Attribute "about" v a
 
 pattern AccentHeight :: HasFeatures a => Txt -> a -> a
-pattern AccentHeight v a = Attribute "accentHeight" v a
+pattern AccentHeight v a = Attribute "accent-height" v a
 
 pattern Accumulate :: HasFeatures a => Txt -> a -> a
 pattern Accumulate v a = Attribute "accumulate" v a
@@ -44,7 +44,7 @@ pattern Additive :: HasFeatures a => Txt -> a -> a
 pattern Additive v a = Attribute "additive" v a
 
 pattern AlignmentBaseline :: HasFeatures a => Txt -> a -> a
-pattern AlignmentBaseline v a = Attribute "alignmentBaseline" v a
+pattern AlignmentBaseline v a = Attribute "alignment-baseline" v a
 
 pattern AllowReorder :: HasFeatures a => Txt -> a -> a
 pattern AllowReorder v a = Attribute "allowReorder" v a
@@ -56,7 +56,7 @@ pattern Amplitude :: HasFeatures a => Txt -> a -> a
 pattern Amplitude v a = Attribute "amplitude" v a
 
 pattern ArabicForm :: HasFeatures a => Txt -> a -> a
-pattern ArabicForm v a = Attribute "arabicForm" v a
+pattern ArabicForm v a = Attribute "arabic-form" v a
 
 pattern Ascent :: HasFeatures a => Txt -> a -> a
 pattern Ascent v a = Attribute "ascent" v a
@@ -77,7 +77,7 @@ pattern BaseFrequency :: HasFeatures a => Txt -> a -> a
 pattern BaseFrequency v a = Attribute "baseFrequency" v a
 
 pattern BaselineShift :: HasFeatures a => Txt -> a -> a
-pattern BaselineShift v a = Attribute "baselineShift" v a
+pattern BaselineShift v a = Attribute "baseline-shift" v a
 
 pattern BaseProfile :: HasFeatures a => Txt -> a -> a
 pattern BaseProfile v a = Attribute "baseProfile" v a
@@ -98,7 +98,7 @@ pattern CalcMode :: HasFeatures a => Txt -> a -> a
 pattern CalcMode v a = Attribute "calcMode" v a
 
 pattern CapHeight :: HasFeatures a => Txt -> a -> a
-pattern CapHeight v a = Attribute "capHeight" v a
+pattern CapHeight v a = Attribute "cap-height" v a
 
 pattern Clip :: HasFeatures a => Txt -> a -> a
 pattern Clip v a = Attribute "clip" v a
@@ -110,22 +110,22 @@ pattern ClipPathUnits :: HasFeatures a => Txt -> a -> a
 pattern ClipPathUnits v a = Attribute "clipPathUnits" v a
 
 pattern ClipRule :: HasFeatures a => Txt -> a -> a
-pattern ClipRule v a = Attribute "clipRule" v a
+pattern ClipRule v a = Attribute "clip-rule" v a
 
 pattern Color :: HasFeatures a => Txt -> a -> a
 pattern Color v a = Attribute "color" v a
 
 pattern ColorInterpolation :: HasFeatures a => Txt -> a -> a
-pattern ColorInterpolation v a = Attribute "colorInterpolation" v a
+pattern ColorInterpolation v a = Attribute "color-interpolation" v a
 
 pattern ColorInterpolationFilters :: HasFeatures a => Txt -> a -> a
-pattern ColorInterpolationFilters v a = Attribute "colorInterpolationFilters" v a
+pattern ColorInterpolationFilters v a = Attribute "color-interpolation-filters" v a
 
 pattern ColorProfile_ :: HasFeatures a => Txt -> a -> a
-pattern ColorProfile_ v a = Attribute "colorProfile" v a
+pattern ColorProfile_ v a = Attribute "color-profile" v a
 
 pattern ColorRendering :: HasFeatures a => Txt -> a -> a
-pattern ColorRendering v a = Attribute "colorRendering" v a
+pattern ColorRendering v a = Attribute "color-rendering" v a
 
 pattern ContentScriptType :: HasFeatures a => Txt -> a -> a
 pattern ContentScriptType v a = Attribute "contentScriptType" v a
@@ -167,7 +167,7 @@ pattern Divisor :: HasFeatures a => Txt -> a -> a
 pattern Divisor v a = Attribute "divisor" v a
 
 pattern DominantBaseline :: HasFeatures a => Txt -> a -> a
-pattern DominantBaseline v a = Attribute "dominantBaseline" v a
+pattern DominantBaseline v a = Attribute "dominant-baseline" v a
 
 pattern Dur :: HasFeatures a => Txt -> a -> a
 pattern Dur v a = Attribute "dur" v a
@@ -185,7 +185,7 @@ pattern Elevation :: HasFeatures a => Txt -> a -> a
 pattern Elevation v a = Attribute "elevation" v a
 
 pattern EnableBackground :: HasFeatures a => Txt -> a -> a
-pattern EnableBackground v a = Attribute "enableBackground" v a
+pattern EnableBackground v a = Attribute "enable-background" v a
 
 pattern End :: HasFeatures a => Txt -> a -> a
 pattern End v a = Attribute "end" v a
@@ -200,10 +200,10 @@ pattern Fill :: HasFeatures a => Txt -> a -> a
 pattern Fill v a = Attribute "fill" v a
 
 pattern FillOpacity :: HasFeatures a => Txt -> a -> a
-pattern FillOpacity v a = Attribute "fillOpacity" v a
+pattern FillOpacity v a = Attribute "fill-opacity" v a
 
 pattern FillRule :: HasFeatures a => Txt -> a -> a
-pattern FillRule v a = Attribute "fillRule" v a
+pattern FillRule v a = Attribute "fill-rule" v a
 
 pattern Filter_ :: HasFeatures a => Txt -> a -> a
 pattern Filter_ v a = Attribute "filter" v a
@@ -215,34 +215,34 @@ pattern FilterUnits :: HasFeatures a => Txt -> a -> a
 pattern FilterUnits v a = Attribute "filterUnits" v a
 
 pattern FloodOpacity :: HasFeatures a => Txt -> a -> a
-pattern FloodOpacity v a = Attribute "floodOpacity" v a
+pattern FloodOpacity v a = Attribute "flood-opacity" v a
 
 pattern FloodColor :: HasFeatures a => Txt -> a -> a
-pattern FloodColor v a = Attribute "floodColor" v a
+pattern FloodColor v a = Attribute "flood-color" v a
 
 pattern Focusable :: HasFeatures a => Txt -> a -> a
 pattern Focusable v a = Attribute "focusable" v a
 
 pattern FontFamily :: HasFeatures a => Txt -> a -> a
-pattern FontFamily v a = Attribute "fontFamily" v a
+pattern FontFamily v a = Attribute "font-family" v a
 
 pattern FontSize :: HasFeatures a => Txt -> a -> a
-pattern FontSize v a = Attribute "fontSize" v a
+pattern FontSize v a = Attribute "font-size" v a
 
 pattern FontSizeAdjust :: HasFeatures a => Txt -> a -> a
-pattern FontSizeAdjust v a = Attribute "fontSizeAdjust" v a
+pattern FontSizeAdjust v a = Attribute "font-size-adjust" v a
 
 pattern FontStretch :: HasFeatures a => Txt -> a -> a
-pattern FontStretch v a = Attribute "fontStretch" v a
+pattern FontStretch v a = Attribute "font-stretch" v a
 
 pattern FontStyle :: HasFeatures a => Txt -> a -> a
-pattern FontStyle v a = Attribute "fontStyle" v a
+pattern FontStyle v a = Attribute "font-style" v a
 
 pattern FontVariant :: HasFeatures a => Txt -> a -> a
-pattern FontVariant v a = Attribute "fontVariant" v a
+pattern FontVariant v a = Attribute "font-variant" v a
 
 pattern FontWeight :: HasFeatures a => Txt -> a -> a
-pattern FontWeight v a = Attribute "fontWeight" v a
+pattern FontWeight v a = Attribute "font-weight" v a
 
 pattern Format :: HasFeatures a => Txt -> a -> a
 pattern Format v a = Attribute "format" v a
@@ -263,13 +263,13 @@ pattern G2 :: HasFeatures a => Txt -> a -> a
 pattern G2 v a = Attribute "g2" v a
 
 pattern GlyphName :: HasFeatures a => Txt -> a -> a
-pattern GlyphName v a = Attribute "glyphName" v a
+pattern GlyphName v a = Attribute "glyph-name" v a
 
 pattern GlyphOrientationHorizontal :: HasFeatures a => Txt -> a -> a
-pattern GlyphOrientationHorizontal v a = Attribute "glyphOrientationHorizontal" v a
+pattern GlyphOrientationHorizontal v a = Attribute "glyph-orientation-horizontal" v a
 
 pattern GlyphOrientationVertical :: HasFeatures a => Txt -> a -> a
-pattern GlyphOrientationVertical v a = Attribute "glyphOrientationVertical" v a
+pattern GlyphOrientationVertical v a = Attribute "glyph-orientation-vertical" v a
 
 pattern GlyphRef_ :: HasFeatures a => Txt -> a -> a
 pattern GlyphRef_ v a = Attribute "glyphRef" v a
@@ -284,16 +284,16 @@ pattern Hanging :: HasFeatures a => Txt -> a -> a
 pattern Hanging v a = Attribute "hanging" v a
 
 pattern HorizAdvX :: HasFeatures a => Txt -> a -> a
-pattern HorizAdvX v a = Attribute "horizAdvX" v a
+pattern HorizAdvX v a = Attribute "horiz-adv-x" v a
 
 pattern HorizOriginX :: HasFeatures a => Txt -> a -> a
-pattern HorizOriginX v a = Attribute "horizOriginX" v a
+pattern HorizOriginX v a = Attribute "horiz-origin-x" v a
 
 pattern Ideographic :: HasFeatures a => Txt -> a -> a
 pattern Ideographic v a = Attribute "ideographic" v a
 
 pattern ImageRendering :: HasFeatures a => Txt -> a -> a
-pattern ImageRendering v a = Attribute "imageRendering" v a
+pattern ImageRendering v a = Attribute "image-rendering" v a
 
 pattern In2 :: HasFeatures a => Txt -> a -> a
 pattern In2 v a = Attribute "in2" v a
@@ -344,10 +344,10 @@ pattern LengthAdjust :: HasFeatures a => Txt -> a -> a
 pattern LengthAdjust v a = Attribute "lengthAdjust" v a
 
 pattern LetterSpacing :: HasFeatures a => Txt -> a -> a
-pattern LetterSpacing v a = Attribute "letterSpacing" v a
+pattern LetterSpacing v a = Attribute "letter-spacing" v a
 
 pattern LightingColor :: HasFeatures a => Txt -> a -> a
-pattern LightingColor v a = Attribute "lightingColor" v a
+pattern LightingColor v a = Attribute "lighting-color" v a
 
 pattern LimitingConeAngle :: HasFeatures a => Txt -> a -> a
 pattern LimitingConeAngle v a = Attribute "limitingConeAngle" v a
@@ -392,7 +392,7 @@ pattern NumOctaves :: HasFeatures a => Txt -> a -> a
 pattern NumOctaves v a = Attribute "numOctaves" v a
 
 pattern Ofaet :: HasFeatures a => Txt -> a -> a
-pattern Ofaet v a = Attribute "ofaet" v a
+pattern Ofaet v a = Attribute "offset" v a
 
 pattern Opacity :: HasFeatures a => Txt -> a -> a
 pattern Opacity v a = Attribute "opacity" v a
@@ -416,13 +416,13 @@ pattern Overflow :: HasFeatures a => Txt -> a -> a
 pattern Overflow v a = Attribute "overflow" v a
 
 pattern OverlinePosition :: HasFeatures a => Txt -> a -> a
-pattern OverlinePosition v a = Attribute "overlinePosition" v a
+pattern OverlinePosition v a = Attribute "overline-position" v a
 
 pattern OverlineThickness :: HasFeatures a => Txt -> a -> a
-pattern OverlineThickness v a = Attribute "overlineThickness" v a
+pattern OverlineThickness v a = Attribute "overline-thickness" v a
 
 pattern PaintOrder :: HasFeatures a => Txt -> a -> a
-pattern PaintOrder v a = Attribute "paintOrder" v a
+pattern PaintOrder v a = Attribute "paint-order" v a
 
 pattern Panose1 :: HasFeatures a => Txt -> a -> a
 pattern Panose1 v a = Attribute "panose1" v a
@@ -466,9 +466,6 @@ pattern PreserveAspectRatio v a = Attribute "preserveAspectRatio" v a
 pattern PrimitiveUnits :: HasFeatures a => Txt -> a -> a
 pattern PrimitiveUnits v a = Attribute "primitiveUnits" v a
 
-pattern SVGAttribute :: HasFeatures a => Txt -> a -> a
-pattern SVGAttribute v a = Attribute "property" v a
-
 pattern R :: HasFeatures a => Txt -> a -> a
 pattern R v a = Attribute "r" v a
 
@@ -482,7 +479,7 @@ pattern RefY :: HasFeatures a => Txt -> a -> a
 pattern RefY v a = Attribute "refY" v a
 
 pattern RenderingIntent :: HasFeatures a => Txt -> a -> a
-pattern RenderingIntent v a = Attribute "renderingIntent" v a
+pattern RenderingIntent v a = Attribute "rendering-intent" v a
 
 pattern RepeatCount :: HasFeatures a => Txt -> a -> a
 pattern RepeatCount v a = Attribute "repeatCount" v a
@@ -527,7 +524,7 @@ pattern Seed :: HasFeatures a => Txt -> a -> a
 pattern Seed v a = Attribute "seed" v a
 
 pattern ShapeRendering :: HasFeatures a => Txt -> a -> a
-pattern ShapeRendering v a = Attribute "shapeRendering" v a
+pattern ShapeRendering v a = Attribute "shape-rendering" v a
 
 pattern Slope :: HasFeatures a => Txt -> a -> a
 pattern Slope v a = Attribute "slope" v a
@@ -563,16 +560,16 @@ pattern StitchTiles :: HasFeatures a => Txt -> a -> a
 pattern StitchTiles v a = Attribute "stitchTiles" v a
 
 pattern StopColor :: HasFeatures a => Txt -> a -> a
-pattern StopColor v a = Attribute "stopColor" v a
+pattern StopColor v a = Attribute "stop-color" v a
 
 pattern StopOpacity :: HasFeatures a => Txt -> a -> a
-pattern StopOpacity v a = Attribute "stopOpacity" v a
+pattern StopOpacity v a = Attribute "stop-opacity" v a
 
 pattern StrikethroughPosition :: HasFeatures a => Txt -> a -> a
-pattern StrikethroughPosition v a = Attribute "strikethroughPosition" v a
+pattern StrikethroughPosition v a = Attribute "strikethrough-position" v a
 
 pattern StrikethroughThickness :: HasFeatures a => Txt -> a -> a
-pattern StrikethroughThickness v a = Attribute "strikethroughThickness" v a
+pattern StrikethroughThickness v a = Attribute "strikethrough-thickness" v a
 
 pattern String :: HasFeatures a => Txt -> a -> a
 pattern String v a = Attribute "string" v a
@@ -581,31 +578,25 @@ pattern Stroke :: HasFeatures a => Txt -> a -> a
 pattern Stroke v a = Attribute "stroke" v a
 
 pattern StrokeDasharray :: HasFeatures a => Txt -> a -> a
-pattern StrokeDasharray v a = Attribute "strokeDasharray" v a
+pattern StrokeDasharray v a = Attribute "stroke-dasharray" v a
 
-pattern StrokeDashofaet :: HasFeatures a => Txt -> a -> a
-pattern StrokeDashofaet v a = Attribute "strokeDashofaet" v a
+pattern StrokeDashoffset :: HasFeatures a => Txt -> a -> a
+pattern StrokeDashoffset v a = Attribute "stroke-dashoffset" v a
 
 pattern StrokeLinecap :: HasFeatures a => Txt -> a -> a
-pattern StrokeLinecap v a = Attribute "strokeLinecap" v a
+pattern StrokeLinecap v a = Attribute "stroke-linecap" v a
 
 pattern StrokeLinejoin :: HasFeatures a => Txt -> a -> a
-pattern StrokeLinejoin v a = Attribute "strokeLinejoin" v a
+pattern StrokeLinejoin v a = Attribute "stroke-linejoin" v a
 
 pattern StrokeMiterlimit :: HasFeatures a => Txt -> a -> a
-pattern StrokeMiterlimit v a = Attribute "strokeMiterlimit" v a
+pattern StrokeMiterlimit v a = Attribute "stroke-miterlimit" v a
 
 pattern StrokeWidth :: HasFeatures a => Txt -> a -> a
-pattern StrokeWidth v a = Attribute "strokeWidth" v a
+pattern StrokeWidth v a = Attribute "stroke-width" v a
 
 pattern StrokeOpacity :: HasFeatures a => Txt -> a -> a
-pattern StrokeOpacity v a = Attribute "strokeOpacity" v a
-
-pattern SuppressContentEditableWarning :: HasFeatures a => Txt -> a -> a
-pattern SuppressContentEditableWarning v a = Attribute "suppressContentEditableWarning" v a
-
-pattern SuppressHydrationWarning :: HasFeatures a => Txt -> a -> a
-pattern SuppressHydrationWarning v a = Attribute "suppressHydrationWarning" v a
+pattern StrokeOpacity v a = Attribute "stroke-opacity" v a
 
 pattern SurfaceScale :: HasFeatures a => Txt -> a -> a
 pattern SurfaceScale v a = Attribute "surfaceScale" v a
@@ -623,16 +614,16 @@ pattern TargetY :: HasFeatures a => Txt -> a -> a
 pattern TargetY v a = Attribute "targetY" v a
 
 pattern TextAnchor :: HasFeatures a => Txt -> a -> a
-pattern TextAnchor v a = Attribute "textAnchor" v a
+pattern TextAnchor v a = Attribute "text-anchor" v a
 
 pattern TextDecoration :: HasFeatures a => Txt -> a -> a
-pattern TextDecoration v a = Attribute "textDecoration" v a
+pattern TextDecoration v a = Attribute "text-decoration" v a
 
 pattern TextLength :: HasFeatures a => Txt -> a -> a
 pattern TextLength v a = Attribute "textLength" v a
 
 pattern TextRendering :: HasFeatures a => Txt -> a -> a
-pattern TextRendering v a = Attribute "textRendering" v a
+pattern TextRendering v a = Attribute "text-rendering" v a
 
 pattern To :: HasFeatures a => Txt -> a -> a
 pattern To v a = Attribute "to" v a
@@ -650,55 +641,55 @@ pattern U2 :: HasFeatures a => Txt -> a -> a
 pattern U2 v a = Attribute "u2" v a
 
 pattern UnderlinePosition :: HasFeatures a => Txt -> a -> a
-pattern UnderlinePosition v a = Attribute "underlinePosition" v a
+pattern UnderlinePosition v a = Attribute "underline-position" v a
 
 pattern UnderlineThickness :: HasFeatures a => Txt -> a -> a
-pattern UnderlineThickness v a = Attribute "underlineThickness" v a
+pattern UnderlineThickness v a = Attribute "underline-thickness" v a
 
 pattern Unicode :: HasFeatures a => Txt -> a -> a
 pattern Unicode v a = Attribute "unicode" v a
 
 pattern UnicodeBidi :: HasFeatures a => Txt -> a -> a
-pattern UnicodeBidi v a = Attribute "unicodeBidi" v a
+pattern UnicodeBidi v a = Attribute "unicode-bidi" v a
 
 pattern UnicodeRange :: HasFeatures a => Txt -> a -> a
-pattern UnicodeRange v a = Attribute "unicodeRange" v a
+pattern UnicodeRange v a = Attribute "unicode-range" v a
 
 pattern UnitsPerEm :: HasFeatures a => Txt -> a -> a
-pattern UnitsPerEm v a = Attribute "unitsPerEm" v a
+pattern UnitsPerEm v a = Attribute "units-per-em" v a
 
 pattern Unselectable :: HasFeatures a => Txt -> a -> a
 pattern Unselectable v a = Attribute "unselectable" v a
 
 pattern VAlphabetic :: HasFeatures a => Txt -> a -> a
-pattern VAlphabetic v a = Attribute "vAlphabetic" v a
+pattern VAlphabetic v a = Attribute "v-alphabetic" v a
 
 pattern Values :: HasFeatures a => Txt -> a -> a
 pattern Values v a = Attribute "values" v a
 
 pattern VectorEffect :: HasFeatures a => Txt -> a -> a
-pattern VectorEffect v a = Attribute "vectorEffect" v a
+pattern VectorEffect v a = Attribute "vector-effect" v a
 
 pattern Version :: HasFeatures a => Txt -> a -> a
 pattern Version v a = Attribute "version" v a
 
 pattern VertAdvY :: HasFeatures a => Txt -> a -> a
-pattern VertAdvY v a = Attribute "vertAdvY" v a
+pattern VertAdvY v a = Attribute "vert-adv-y" v a
 
 pattern VertOriginX :: HasFeatures a => Txt -> a -> a
-pattern VertOriginX v a = Attribute "vertOriginX" v a
+pattern VertOriginX v a = Attribute "vert-origin-x" v a
 
 pattern VertOriginY :: HasFeatures a => Txt -> a -> a
-pattern VertOriginY v a = Attribute "vertOriginY" v a
+pattern VertOriginY v a = Attribute "vert-origin-y" v a
 
 pattern VHanging :: HasFeatures a => Txt -> a -> a
-pattern VHanging v a = Attribute "vHanging" v a
+pattern VHanging v a = Attribute "v-hanging" v a
 
 pattern Id :: HasFeatures a => Txt -> a -> a
 pattern Id v a = Attribute "id" v a
 
 pattern VIdeographic :: HasFeatures a => Txt -> a -> a
-pattern VIdeographic v a = Attribute "vIdeographic" v a
+pattern VIdeographic v a = Attribute "v-ideographic" v a
 
 pattern ViewBox :: HasFeatures a => Txt -> a -> a
 pattern ViewBox v a = Attribute "viewBox" v a
@@ -710,7 +701,7 @@ pattern Visibility :: HasFeatures a => Txt -> a -> a
 pattern Visibility v a = Attribute "visibility" v a
 
 pattern VMathematical :: HasFeatures a => Txt -> a -> a
-pattern VMathematical v a = Attribute "vMathematical" v a
+pattern VMathematical v a = Attribute "v-mathematical" v a
 
 pattern Vocab :: HasFeatures a => Txt -> a -> a
 pattern Vocab v a = Attribute "vocab" v a
@@ -719,10 +710,10 @@ pattern Widths :: HasFeatures a => Txt -> a -> a
 pattern Widths v a = Attribute "widths" v a
 
 pattern WordSpacing :: HasFeatures a => Txt -> a -> a
-pattern WordSpacing v a = Attribute "wordSpacing" v a
+pattern WordSpacing v a = Attribute "word-spacing" v a
 
 pattern WritingMode :: HasFeatures a => Txt -> a -> a
-pattern WritingMode v a = Attribute "writingMode" v a
+pattern WritingMode v a = Attribute "writing-mode" v a
 
 pattern X1 :: HasFeatures a => Txt -> a -> a
 pattern X1 v a = Attribute "x1" v a
@@ -737,43 +728,43 @@ pattern XChannelSelector :: HasFeatures a => Txt -> a -> a
 pattern XChannelSelector v a = Attribute "xChannelSelector" v a
 
 pattern XHeight :: HasFeatures a => Txt -> a -> a
-pattern XHeight v a = Attribute "xHeight" v a
+pattern XHeight v a = Attribute "x-height" v a
 
-pattern XlinkActuate :: HasFeatures a => Txt -> a -> a
-pattern XlinkActuate v a = Attribute "xlinkActuate" v a
+pattern XlinkActuate :: HasXLinks a => Txt -> a -> a
+pattern XlinkActuate v a = XLink "xlink:actuate" v a
 
-pattern XlinkArcrole :: HasFeatures a => Txt -> a -> a
-pattern XlinkArcrole v a = Attribute "xlinkArcrole" v a
+pattern XlinkArcrole :: HasXLinks a => Txt -> a -> a
+pattern XlinkArcrole v a = XLink "xlink:arcrole" v a
 
-pattern XlinkHref :: HasFeatures a => Txt -> a -> a
-pattern XlinkHref v a = Attribute "xlinkHref" v a
+pattern XlinkHref :: HasXLinks a => Txt -> a -> a
+pattern XlinkHref v a = XLink "xlink:href" v a
 
-pattern XlinkRole :: HasFeatures a => Txt -> a -> a
-pattern XlinkRole v a = Attribute "xlinkRole" v a
+pattern XlinkRole :: HasXLinks a => Txt -> a -> a
+pattern XlinkRole v a = XLink "xlink:role" v a
 
-pattern XlinkShow :: HasFeatures a => Txt -> a -> a
-pattern XlinkShow v a = Attribute "xlinkShow" v a
+pattern XlinkShow :: HasXLinks a => Txt -> a -> a
+pattern XlinkShow v a = XLink "xlink:show" v a
 
-pattern XlinkTitle :: HasFeatures a => Txt -> a -> a
-pattern XlinkTitle v a = Attribute "xlinkTitle" v a
+pattern XlinkTitle :: HasXLinks a => Txt -> a -> a
+pattern XlinkTitle v a = XLink "xlink:title" v a
 
-pattern XlinkType :: HasFeatures a => Txt -> a -> a
-pattern XlinkType v a = Attribute "xlinkType" v a
+pattern XlinkType :: HasXLinks a => Txt -> a -> a
+pattern XlinkType v a = XLink "xlink:type" v a
 
-pattern XmlBase :: HasFeatures a => Txt -> a -> a
-pattern XmlBase v a = Attribute "xmlBase" v a
+pattern XmlBase :: HasXLinks a => Txt -> a -> a
+pattern XmlBase v a = XLink "xml:base" v a
 
-pattern XmlLang :: HasFeatures a => Txt -> a -> a
-pattern XmlLang v a = Attribute "xmlLang" v a
+pattern XmlLang :: HasXLinks a => Txt -> a -> a
+pattern XmlLang v a = XLink "xml:lang" v a
 
 pattern Xmlns :: HasFeatures a => Txt -> a -> a
 pattern Xmlns v a = Attribute "xmlns" v a
 
-pattern XmlnsXlink :: HasFeatures a => Txt -> a -> a
-pattern XmlnsXlink v a = Attribute "xmlnsXlink" v a
+pattern XmlnsXlink :: HasXLinks a => Txt -> a -> a
+pattern XmlnsXlink v a = XLink "xmlns:xlink" v a
 
-pattern XmlSpace :: HasFeatures a => Txt -> a -> a
-pattern XmlSpace v a = Attribute "xmlSpace" v a
+pattern XmlSpace :: HasXLinks a => Txt -> a -> a
+pattern XmlSpace v a = XLink "xml:space" v a
 
 pattern Y1 :: HasFeatures a => Txt -> a -> a
 pattern Y1 v a = Attribute "y1" v a
